@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Form.scss";
 
 
 
@@ -30,46 +31,60 @@ function Form() {
     return (
     <section>
       <form onSubmit={handleSubmit}>
+
         <div>
-        <select value={Activity}>
-          <option value="Travelling">Travelling</option>
+          <p>How much do you travel?</p>
+          <select className="activity" value={Activity}>
+          <option value="choose option">choose option</option>
+          <option value="I hate leaving the house">I hate leaving the house</option>
           <option value="50/50">50/50</option>
-          <option value="Indoor">Indoor</option>
+          <option value="I love the outdoors">I love the outdoors</option>
         </select>
       </div>
       
       <div>
-        <select value={Affection} >
+        <p>Are you an affectionate person?</p>
+        <select className="affection" value={Affection} >
+        <option value="choose option">choose option</option>
           <option value="normal">Normal</option>
           <option value="Lonely">Lonely</option>
+          <option value="Im so needy">Im so needy</option>
         </select>
       </div>
 
       <div>
-        <select value={Allergic} >
+        <p>Are you allergic to Cats?</p>
+        <select className="allergic" value={Allergic} >
+        <option value="choose option">choose option</option>
           <option value="Yes">Yes</option>
           <option value="No">No</option>
         </select>
       </div>
 
       <div>
-        <select value={Children} >
+        <p>Do you have children?</p>
+        <select className="children" value={Children} >
+        <option value="choose option">choose option</option>
           <option value="Yes">Yes</option>
           <option value="No">No</option>
           </select>
       </div>
 
       <div>
-        <select value={Dogs} >
+        <p>Do you have a Dogs?</p>
+        <select className="dogs" value={Dogs} >
+        <option value="choose option">choose option</option>
           <option value="Yes">Yes</option>
           <option value="No">No</option>
           </select>  
       </div>
 
       <div>
-        <select value={Garden} >
-          <option value="Indoor Cat">Indoor Cat</option>
-          <option value="Outdoor Cat">Outdoor Cat</option>
+        <p>Do you have a garden?</p>
+        <select className="garden" value={Garden} >
+        <option value="choose option">choose option</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
           </select>
           </div>  
         </form>
