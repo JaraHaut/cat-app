@@ -31,42 +31,49 @@ function Form() {
     <section>
       <form onSubmit={handleSubmit}>
         <div>
+          <p>How much do you travel?</p>
         <select value={activity}>
-          <option value="Travelling">Travelling</option>
+          <option value="Travel a lot">Travelling</option>
           <option value="50/50">50/50</option>
-          <option value="Indoor">Indoor</option>
+          <option value="Prefer to stay at home">Indoor</option>
         </select>
       </div>
       
       <div>
+        <p>Are you an affectionate person?</p>
         <select value={affection} >
           <option value="normal">Normal</option>
           <option value="Lonely">Lonely</option>
+          <option value="Super ">Lonely</option>
         </select>
       </div>
 
       <div>
+        <p>Are you allergic?</p>
         <select value={allergic} >
-          <option value="Yes">Yes</option>
-          <option value="No">No</option>
+          <label htmlFor="checkbox">Yes</label>
+          <label htmlFor="checkbox">No</label>
         </select>
       </div>
 
       <div>
+        <p>Do you have children?</p>
         <select value={children} >
-          <option value="Yes">Yes</option>
-          <option value="No">No</option>
+        <label htmlFor="checkbox">Yes</label>
+          <label htmlFor="checkbox">No</label>
           </select>
       </div>
 
       <div>
+        <p>Do you have a dog?</p>
         <select value={dogs} >
-          <option value="Yes">Yes</option>
-          <option value="No">No</option>
+        <label htmlFor="checkbox">Yes</label>
+          <label htmlFor="checkbox">No</label>
           </select>  
       </div>
 
       <div>
+        <p>Do you have a garden?</p>
         <select value={garden} >
           <option value="Indoor Cat">Indoor Cat</option>
           <option value="Outdoor Cat">Outdoor Cat</option>
